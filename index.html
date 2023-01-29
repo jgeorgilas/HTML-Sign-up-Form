@@ -21,8 +21,9 @@
             </div>
                 <fieldset>
                     <Legend>Your Contact Information</Legend>
-                    <div><label for="email">email</label>
-                    <input type="email" id="useremail" name="email" placeholder="johndoe@gmail.com">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="useremail" name="email" placeholder="johndoe@gmail.com">
                     </div>
                     <div>
                         <label for="Street Address">Street Address</label>
@@ -32,7 +33,10 @@
                         <label for="city">City</label>
                         <input type="text" id="city" name="city" placeholder="Nevada">
                     </div>
-                    
+                    <div>
+                        <label for="zipcode">Zipcode</label>
+                        <input type="number" id="zipcode" name="zipcode" placeholder="89117">
+                    </div>
                     <div>
                         <label for="state">Your State</label>
                         <select name="state" id="state">
@@ -89,16 +93,15 @@
                     </div>
                 </fieldset>
             </div>
-
             <fieldset>
                 <legend>Your Preferences</legend>
                 <h3>Choose your location</h3>
                 <div>
-                    <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                    <input type="radio" id="aruba" name="location" value="Aruba"> 
                     <label for="aruba">Aruba</label>
                 </div>
                 <div>
-                    <input type="radio" id="japan" name="location" value="Japan"> 
+                    <input type="radio" id="japan" name="location" value="Japan" checked> 
                     <label for="japan">Japan</label>
                 </div>
                 <div>
@@ -110,7 +113,32 @@
                     <label for="new-zealand">New Zealand</label>
                 </div>
             </fieldset>
-            
+            <br>
+            <div>
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <br>
+            <fieldset>
+                <legend>Extras</legend>
+                <h3>Upgrades</h3>
+                <div>
+                    <input type="radio" id="sauna" name="extras" value="sauna"> 
+                    <label for="sauna">Sauna</label>
+                </div>
+                <div>
+                    <input type="radio" id="in-room hot tub" name="extras" value="in-room hot tub"> 
+                    <label for="in-room hot tub">Hot Tub</label>
+                </div>
+                <div>
+                    <input type="radio" id="mini bar" name="extras" value="mini bar" checked> 
+                    <label for="mini bar">Mini Bar</label>
+                </div>
+                <div>
+                    <input type="radio" id="balcony" name="extras" value="balcony"> 
+                    <label for="balcony">Balcony</label>
+                </div>
+            </fieldset>
             <!-- TODO: Radio buttons for selecting preferred destination -->
             <!-- TODO: Color input for selecting favorite color -->
             <!-- TODO: Checkboxes for selecting extra add-ons -->
